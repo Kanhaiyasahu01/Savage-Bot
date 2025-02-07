@@ -1,8 +1,25 @@
-# React + Vite
+# 🚀 SavageBot 🔥  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SavageBot is an AI-powered chatbot designed to deliver **savage, witty, and brutally honest** responses to your questions. Whether you're looking for a good roast, a sarcastic reply, or just some fun banter, SavageBot has you covered! 😈🔥  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
+
+- 💀 **Savage AI Responses** – No sugarcoating, just pure roasting.  
+- ⚡ **Fast & Responsive** – Powered by React and Vite for an ultra-fast experience.  
+- 🎨 **Stylish UI** – Dark-themed interface with neon glowing effects.  
+- 🤖 **AI-Powered** – Uses `askAI()` function for dynamic responses.  
+- 🔥 **Interactive & Fun** – Ask at your own risk!  
+
+---
+
+## 🎬 Live Demo  
+
+🚀 [Check out the live version here!](#) *(Add your deployment link here)*  
+
+---
+
+## 🏆 Contribution  
+
+Feel free to contribute to **SavageBot**! If you find bugs or want to improve features, submit a pull request.  
