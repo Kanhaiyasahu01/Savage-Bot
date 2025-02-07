@@ -26,31 +26,35 @@ const SavageBot = () => {
   };
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-6 bg-gradient-to-br from-purple-900 via-black to-gray-900 text-white">
+    <div className="flex flex-col items-center min-h-screen px-4 py-6 bg-gradient-to-br from-purple-900 via-black to-gray-900 text-white">
       {/* 🚀 Project Name & Caption */}
       <div className="text-center mb-8">
-        <h1 className="text-5xl md:text-7xl font-extrabold text-green-400 neon-glow-green">
-          🧠 SavageBot 🔥
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-green-400 neon-glow-green">
+          <span className="block sm:hidden">SavageBot</span>
+          <span className="hidden sm:block">🧠 SavageBot 🔥</span>
         </h1>
       </div>
 
       {/* ⚠️ Warning Heading */}
-      <p className="text-sm md:text-base font-semibold text-gray-400 border-l-4 p-2 rounded-md mb-20">
+      <p className="text-xs sm:text-sm md:text-base font-semibold text-gray-400 border-l-4 p-2 rounded-md mb-16 md:mb-20">
         ⚠️ Ask at your own risk! SavageBot takes no prisoners. 💀🔥
       </p>
 
       {/* 💬 Form Section */}
-      <form onSubmit={handleSubmit} className="w-full max-w-lg flex flex-col items-center gap-4">
+      <form
+        onSubmit={handleSubmit}
+        className="w-full max-w-md md:max-w-lg flex flex-col items-center gap-4"
+      >
         <input
           type="text"
           value={inputValue}
           onChange={handleInputChange}
           placeholder="Ask something... if you dare! 😈"
-          className="w-full p-3 text-lg border-2 border-green-400 bg-black text-white rounded-lg focus:ring-2 focus:ring-green-400 outline-none transition-all duration-300 placeholder-gray-400"
+          className="w-full p-3 text-base md:text-lg border-2 border-green-400 bg-black text-white rounded-lg focus:ring-2 focus:ring-green-400 outline-none transition-all duration-300 placeholder-gray-400"
         />
         <button
           type="submit"
-          className="px-6 py-3 text-lg font-bold bg-green-500 text-white rounded-lg hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg"
+          className="w-full sm:w-auto px-6 py-3 text-base md:text-lg font-bold bg-green-500 text-white rounded-lg hover:bg-green-700 transition-all duration-300 shadow-md hover:shadow-lg"
         >
           {loading ? "Thinking... 🤔" : "Roast Me! 🔥"}
         </button>
@@ -58,11 +62,11 @@ const SavageBot = () => {
 
       {/* 🎤 SavageBot Reply Section */}
       {loading ? (
-        <div className="mt-6 text-lg text-gray-400">Loading... Preparing your roast! 🔥</div>
+        <div className="mt-6 text-sm md:text-lg text-gray-400">Loading... Preparing your roast! 🔥</div>
       ) : (
         savageReply && (
           <pre
-            className="mt-6 p-4 w-full max-w-5xl bg-gray-900 text-green-400 font-mono text-lg border border-gray-700 rounded-lg overflow-auto min-h-[100px] animate-pulse"
+            className="mt-6 p-4 w-full max-w-lg md:max-w-5xl bg-gray-900 text-green-400 font-mono text-sm md:text-lg border border-gray-700 rounded-lg overflow-auto min-h-[80px] md:min-h-[100px] animate-pulse"
             style={{ whiteSpace: "pre-wrap", wordBreak: "break-word" }}
           >
             {savageReply}
@@ -71,7 +75,7 @@ const SavageBot = () => {
       )}
 
       {/* 🚨 Disclaimer */}
-      <p className="mt-16 text-sm text-gray-400 text-center">
+      <p className="mt-12 md:mt-16 text-xs sm:text-sm text-gray-400 text-center">
         🚨 **Disclaimer:** SavageBot is purely for entertainment purposes. 😆🔥
       </p>
 
