@@ -14,11 +14,13 @@ SavageBot is an AI-powered chatbot designed to deliver **savage, witty, and brut
 
 ---
 
-## 🎬 Live Demo  
+## 🚀 Live Demo  
 
-🚀 [Check out the live version here!](#) *(Add your deployment link here)*  
+🔥 Try **SavageBot** in action! Click the link below to get roasted:  
+🔗 [Live Demo](https://savage-bot-mu.vercel.app/)  
 
 ---
+
 
 ## 🏆 Contribution  
 
